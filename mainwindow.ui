@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>281</width>
+    <height>217</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <widget class="QWidget" name="centralwidget"/>
+  <widget class="QMenuBar" name="menubar">
+   <property name="enabled">
+    <bool>true</bool>
+   </property>
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>281</width>
+     <height>31</height>
+    </rect>
+   </property>
+   <property name="font">
+    <font>
+     <family>Cantarell</family>
+     <pointsize>11</pointsize>
+    </font>
+   </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Файл</string>
+    </property>
+    <addaction name="action_addVectorLayer"/>
+    <addaction name="action_addRasterLayer"/>
+    <addaction name="separator"/>
+    <addaction name="action_WMS"/>
+    <addaction name="action_WMTS"/>
+    <addaction name="action_WFS"/>
+    <addaction name="separator"/>
+    <addaction name="action_deleteSelectedLayers"/>
+   </widget>
+   <widget class="QMenu" name="menuSettings">
+    <property name="font">
+     <font>
+      <family>Cantarell</family>
+      <pointsize>11</pointsize>
+     </font>
+    </property>
+    <property name="title">
+     <string>Настройки</string>
+    </property>
+    <addaction name="action_setPathSnap"/>
+    <addaction name="action_setRoboflowAPI"/>
+    <addaction name="action_setCopernicusPassword"/>
+    <addaction name="separator"/>
+    <addaction name="action_makeScreenshot"/>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuSettings"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_addVectorLayer">
+   <property name="text">
+    <string>Добавить векторный слой</string>
+   </property>
+   <property name="font">
+    <font/>
+   </property>
+  </action>
+  <action name="action_addRasterLayer">
+   <property name="text">
+    <string>Добавить растровый слой</string>
+   </property>
+  </action>
+  <action name="action_deleteSelectedLayers">
+   <property name="text">
+    <string>Удалить выбранные слои</string>
+   </property>
+  </action>
+  <action name="action_setCurrentTime">
+   <property name="text">
+    <string>Задать начальное время</string>
+   </property>
+  </action>
+  <action name="action_setPathSnap">
+   <property name="text">
+    <string>Задать путь к SNAP</string>
+   </property>
+  </action>
+  <action name="action_WMS">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/wms.png</normaloff>:/res/wms.png</iconset>
+   </property>
+   <property name="text">
+    <string>Web Map Service (WMS)</string>
+   </property>
+  </action>
+  <action name="action_WFS">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/wfs.png</normaloff>:/res/wfs.png</iconset>
+   </property>
+   <property name="text">
+    <string>Web Feature Service (WFS)</string>
+   </property>
+  </action>
+  <action name="action_WMTS">
+   <property name="icon">
+    <iconset resource="res.qrc">
+     <normaloff>:/res/wmts.png</normaloff>:/res/wmts.png</iconset>
+   </property>
+   <property name="text">
+    <string>Web Map Tile Service (WMTS)</string>
+   </property>
+  </action>
+  <action name="action_makeScreenshot">
+   <property name="text">
+    <string>Сделать скриншот</string>
+   </property>
+  </action>
+  <action name="action_setRoboflowAPI">
+   <property name="text">
+    <string>Задать API ключ Roboflow</string>
+   </property>
+  </action>
+  <action name="action_setCopernicusPassword">
+   <property name="text">
+    <string>Задать данные Copernicus</string>
+   </property>
+  </action>
+ </widget>
+ <resources>
+  <include location="res.qrc"/>
+ </resources>
+ <connections/>
+</ui>

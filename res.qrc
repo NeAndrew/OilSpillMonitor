@@ -1,0 +1,13 @@
+<RCC>
+    <qresource prefix="/icon"/>
+    <qresource prefix="/">
+        <file>res/pause-button.png</file>
+        <file>res/play-button.png</file>
+        <file>res/area.png</file>
+        <file>res/wfs.png</file>
+        <file>res/wms.png</file>
+        <file>res/wmts.png</file>
+        <file>res/application-icon.png</file>
+        <file>res/right-arrow.gif</file>
+    </qresource>
+</RCC>
