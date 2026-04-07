@@ -28,7 +28,7 @@
 
 - **Язык:** C++  
 - **GUI:** Qt  
-- **Библиотеки для работы с геоданными:** QGIS API, GDAL? SNAP (Geo Processing Tool)
+- **Библиотеки для работы с геоданными:** QGIS API, GDAL, SNAP (Geo Processing Tool)
 - **Спутниковые данные:** Sentinel-1 (SAR) через Copernicus API  
 - **Гидрометеорологические данные:** Open-Meteo API  
 - **ОС:** Astra Linux 1.8
@@ -37,7 +37,7 @@
 
 ## Установка
 
-1. Установите **Qt 5.15+** и **QGIS API**.  
+1. Установите **Qt 5.15+**, **QGIS API**, **SNAP** и **GDAL**,.  
 2. Склонируйте репозиторий проекта.  
 3. Откройте проект в Qt Creator.  
 4. Настройте пути к библиотекам QGIS и GDAL.  
